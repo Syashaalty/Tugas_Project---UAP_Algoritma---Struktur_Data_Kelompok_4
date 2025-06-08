@@ -3,7 +3,7 @@
 #include <ctime>
 #include <cstdlib>
 #include <iomanip>
-#include <unistd.h> // untuk sleep()
+#include <unistd.h> 
 
 using namespace std;
 
@@ -161,7 +161,7 @@ void tampilkanMenuCRUD(vector<Pelanggar> &dataPelanggar) {
             }
             if (!ketemu) cout << "Data tidak ditemukan.\n";
         } else if (pilihan == 5) {
-            return; // lanjutkan simulasi
+            return; 
         } else if (pilihan == 6) {
             exit(0);
         } else {
@@ -212,7 +212,7 @@ void jalankanSimulasi(vector<Pelanggar> &dataPelanggar) {
             }
         }
 
-        sleep(2); // Delay 2 detik (1 menit simulasi)
+        sleep(2); 
     }
 }
 
